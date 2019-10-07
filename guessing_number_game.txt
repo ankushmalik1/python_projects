@@ -1,0 +1,28 @@
+number = 18
+flag = 0
+counter = 0
+max_guess_limit = 5
+print("Welcome to the game of GUESSING THE NUMBER")
+print("Kindly find a secret number (5 guesses only)")
+while (counter < 5):
+    n = int(input("Enter a number :"))
+    if (n==number):
+        print("Congrats, no. matched")
+        flag = 1
+        break
+        
+    elif (n<number):
+        print("Kindly increase your no.")
+        print("Guesses left :", (max_guess_limit - 1))
+        max_guess_limit = max_guess_limit -1
+        
+    else:
+        print("Kindly decrease your no.")
+        print("Guesses left :", (max_guess_limit - 1))
+        max_guess_limit = max_guess_limit -1
+        
+    counter = counter + 1
+if flag == 1:
+    pass
+else:
+    print("Guesses limit finished")
