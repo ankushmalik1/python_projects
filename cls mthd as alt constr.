@@ -1,0 +1,14 @@
+#Using class method as alternative constructor
+class Employee:
+    # def __init__(self,fname,lname,salary):
+    #     self.fname=fname
+    #     self.lname=lname
+    #     self.salary=salary
+    
+    @classmethod
+    def frm_str(cls,stringg):
+        fname,lname,salary=stringg.split("-")
+        return cls(fname,lname,salary)
+
+ankush=Employee.frm_str("Ankush-Malik-50000")
+print(ankush.fname)
