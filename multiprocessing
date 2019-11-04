@@ -8,6 +8,9 @@ def square(number):
   #os module prints process ID assigned to call of this fn. assigned by OS.
   process_id=os.getpid()
   print(f"Process ID : {process_id}")
+  
+  #We can also use "current process" function to get the name of the Process object
+  process_name=current_process().name
   print(f"The square of {number} is {result}")
 
 if __name__ == '__main__':
