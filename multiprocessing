@@ -11,6 +11,7 @@ def square(number):
   
   #We can also use "current process" function to get the name of the Process object
   process_name=current_process().name
+  print(f"Process name: {process_name}")
   print(f"The square of {number} is {result}")
 
 if __name__ == '__main__':
