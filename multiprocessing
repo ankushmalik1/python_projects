@@ -16,12 +16,12 @@ def square(number):
   print(f"The square of {number} is {result}\n")
 
 if __name__ == '__main__':
-  processes=[]
+  #processes=[]
   numbers=[1,2,3,4]
 
   for number in numbers:
     process = Process(target=square, args=(number,))
-    processes.append(process)
+    #processes.append(process)
 
     #Processes are spawned by creating a Process object and then calling its start() method
     process.start()
