@@ -13,7 +13,7 @@ def square(number):
   process_name=current_process().name
   print(f"Process name: {process_name}")
   
-  print(f"The square of {number} is {result}")
+  print(f"The square of {number} is {result}\n")
 
 if __name__ == '__main__':
   processes=[]
